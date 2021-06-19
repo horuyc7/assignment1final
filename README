@@ -2,8 +2,7 @@ ASSIGNMENT 1
 SE 4348
 
 
-change all the path on different system.
-line 37, 88, 123, 170, 257, 292
+change all the path before running
 
-/home/hoy/assignment1final/child/
-/home/hoy/assignment1final/child2/
+line 37, 88, 257 to child1 directory path
+line 123, 170, 292 to child2 directory path
