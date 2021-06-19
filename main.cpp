@@ -34,7 +34,7 @@ int main()
   //This part fill open the first directory and read all its content into a struct
   DIR * myDirectory;
   struct dirent * myFile;
-  myDirectory = opendir("/home/hoy/assignment1/child/");
+  myDirectory = opendir("/home/hoy/assignment1final/child/");
   
   
   //variables
@@ -85,7 +85,7 @@ int main()
   for(int f = 0; f < countdir1-2; f++)
   {
     //string manipulation to store filepath into array
-    strcpy(path[f], "/home/hoy/assignment1/child/");
+    strcpy(path[f], "/home/hoy/assignment1final/child/");
     char * filename = strcat(path[f], dir.filename[f]);
     //strcpy(filenamearray[f], filename);
     strcpy(filenamearray[f], dir.filename[f]);
@@ -120,7 +120,7 @@ int main()
   //This part fill open the 2nd directory and read all its content into a struct
   DIR * myDirectory2;
   struct dirent * myFile2;
-  myDirectory2 = opendir("/home/hoy/assignment1/child2/");
+  myDirectory2 = opendir("/home/hoy/assignment1final/child2/");
   
   
   //array to hold filename and content
@@ -167,7 +167,7 @@ int main()
   for(int f = 0; f < countdir2-2; f++)
   {
     //string manipulation to store file name into array
-    strcpy(path2[f], "/home/hoy/assignment1/child2/");
+    strcpy(path2[f], "/home/hoy/assignment1final/child2/");
     char * filename = strcat(path2[f], dir2.filename[f]);
     //strcpy(filenamearray2[f], filename);
     strcpy(filenamearray2[f], dir2.filename[f]);
@@ -254,7 +254,7 @@ int main()
 
 
       //string manipulating to create and store the file into new child path
-      strcpy(path2[h], "/home/hoy/assignment1/child/");
+      strcpy(path2[h], "/home/hoy/assignment1final/child/");
       char * filename2 = strcat(path2[h], pipename2[h]);
       strcpy(newfilename2[h], filename2);
 
@@ -289,7 +289,7 @@ int main()
       read(p2[0], pipecontent[h], sizeof(pipecontent[h]));
 
       //string manipulating to create and store the file into new child path
-      strcpy(newpath[h], "/home/hoy/assignment1/child2/");
+      strcpy(newpath[h], "/home/hoy/assignment1final/child2/");
       char * filename = strcat(newpath[h], pipename[h]);
       strcpy(newfilename[h], filename);
 
